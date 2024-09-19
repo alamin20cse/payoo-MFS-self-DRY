@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo DRY</title>
+    
+    <!-- cdn -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+ 
+
+    <main class="flex justify-center">
+           
+<!-- phone -->
+<div class="mockup-phone">
+    <div class="camera"></div>
+    <div class="display">
+      <div class="artboard artboard-demo phone-3">
+
+
+<!-- stat -->
+        <div>
+
+            <div class="stats shadow">
+                <div class="stat">
+                  
+                  <div id="taka-button" class="stat-value">9400</div>
+                  <div class="stat-desc">Avaiable Blance</div>
+                </div>
+              </div>
+              <div class="divider"></div>
+
+
+              <!-- user action button -->
+               <div>
+
+                <button id="show-cashin" class="btn btn-lg">Add Money</button>
+                <button id="show-cashout" class="btn btn-lg">Cash Out</button>
+                
+
+               </div>
+               <div class="divider"></div>
+
+               
+               <!-- from start -->
+
+               <div id="cashin-section" class="">
+
+                
+               <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Cash In Amount</span>
+                  </label>
+                  <input id="amount-field" type="text" placeholder="Amount " class="input input-bordered" required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span  class="label-text">Pin</span>
+                  </label>
+                  <input id="pin-button" type="password" placeholder="Pin" class="input input-bordered" required />
+                 
+                </div>
+                <div class="form-control mt-6">
+                  <button id="add-button" class="btn btn-primary">Add Money</button>
+                </div>
+              </form>
+               </div>
+
+               <!-- from end -->
+            </main>
+
+            <script src="utilities.js"></script>
+
+            <script src="home.js"></script>
+        
+        </body>
+        </html>
