@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payoo DRY</title>
+    <title>Payoo MFS DRY</title>
     
     <!-- cdn -->
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
             <div class="stats shadow">
                 <div class="stat">
                   
-                  <div id="taka-button" class="stat-value">9400</div>
+                  <div id="blance-value" class="stat-value">9400</div>
                   <div class="stat-desc">Avaiable Blance</div>
                 </div>
               </div>
@@ -39,6 +39,7 @@
 
                 <button id="show-cashin" class="btn btn-lg">Add Money</button>
                 <button id="show-cashout" class="btn btn-lg">Cash Out</button>
+                <button id="show-transation" class="btn btn-lg">Transation</button>
                 
 
                </div>
@@ -47,7 +48,7 @@
                
                <!-- from start -->
 
-               <div id="cashin-section" class="">
+               <div id="cashin-section" class="hidden">
 
                 
                <form class="card-body">
@@ -71,7 +72,51 @@
                </div>
 
                <!-- from end -->
+
+
+               <!-- start of cash out from -->
+
+               
+               <div id="cashout-section" class="">
+
+                
+                <form class="card-body">
+                 <div class="form-control">
+                   <label class="label">
+                     <span class="label-text">Cash Out Amount</span>
+                   </label>
+                   <input id="cashout-amount-field" type="text" placeholder="Amount " class="input input-bordered" required />
+                 </div>
+                 <div class="form-control">
+                   <label class="label">
+                     <span  class="label-text">Pin</span>
+                   </label>
+                   <input id="cashout-pin-button" type="password" placeholder="Pin" class="input input-bordered" required />
+                  
+                 </div>
+                 <div class="form-control mt-6">
+                   <button id="cashout-button" class="btn btn-primary">Cash Out Money</button>
+                 </div>
+               </form>
+                </div>
+ 
+                <!-- end of cashout from -->
+
+                <!-- Transation start -->
+
+                <div id="section-transtion" class="hidden">
+                  <h1 class="text-3xl">Transtion history</h1>
+
+                  <div id="transtion-appen">
+
+                  </div>
+
+                </div>
+
+                <!-- Transtion End -->
+
             </main>
+            <script src="featur.js"></script>
 
             <script src="utilities.js"></script>
 
