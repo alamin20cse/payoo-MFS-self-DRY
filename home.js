@@ -66,7 +66,7 @@ document.getElementById('cashout-button').addEventListener('click',function(even
 
         // Transtion
         const p=document.createElement('p');
-        p.innerText=`Withdraw :${Newblance} tk  `;
+        p.innerText=`Withdraw :${CashoutAmountField} tk  `;
         p.style.background='red';
         document.getElementById("transtion-appen").append(p);
 
